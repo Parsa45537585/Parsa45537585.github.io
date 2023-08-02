@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- START OF HEADER DEFINITION -->
+    <div class="header" dir="rtl">
+      <div class="logo">
+        <a href="https://www.mftplus.com">
+          <img
+            src="https://mftplus.com/theme/images/mftlogo.png"
+            alt="mft logo"
+            class="mftlogo"
+          />
+        </a>
+      </div>
+      <div class="links">
+        <a class="link" href="../Unit1/index.html">فصل 1</a>
+        <a class="link" href="../Unit2/index.html">فصل 2</a>
+        <a class="link" href="../Unit3/index.html">فصل 3</a>
+        <a class="link" href="../Unit4/index.html">فصل 4</a>
+        <a class="link" href="../Unit5/index.html">فصل 5</a>
+        <a class="link" href="../Unit6/index.html">فصل 6</a>
+        <a class="link" href="../Unit7/index.html">فصل 7</a>
+        <a class="link" href="../Unit8/index.html">فصل 8</a>
+      </div>
+    </div>
+    <!-- END OF HEADER DEFINITION -->
+    <div class="guide">
+      <p class="title">فصل سوم</p>
+      <p class="title rtl">لیست ها</p>
+      <div class="holder">
+        <!--  <p class="description rtl">سه مدل لیست در html داریم:</p>
+                <p class="description rtl">Ordered Lists : هر آیتم در لیست دارای شماره است</p>
+                <p class="description rtl">تگ ها : &lt;ol&gt; و &lt;li&gt;</p>
+                <p class="description rtl">Unordered Lists : هر آیتم در لیست دارای bullets است</p>
+                <p class="description rtl">تگ ها : &lt;ul&gt; و &lt;li&gt;</p>
+                <p class="description rtl">Definition Lists : هر آیتم در لیست توضیحات مختص به خود را دارد</p>
+                <p class="description rtl">تگ ها : &lt;dl&gt; و &lt;dt&gt; و &lt;dd&gt;</p> -->
+        <dl class="description rtl">
+          سه مدل لیست در html داریم :
+          <dt class="description rtl">
+            Ordered Lists : هر آیتم در لیست دارای شماره است
+          </dt>
+          <dd class="description-details rtl">تگ ها : &lt;ol&gt; و &lt;li&gt;</dd>
+          <dt class="description rtl">
+            Unordered Lists : هر آیتم در لیست دارای bullets است
+          </dt>
+          <dd class="description-details rtl">تگ ها : &lt;ul&gt; و &lt;li&gt;</dd>
+          <dt class="description rtl">
+            Definition Lists : هر آیتم در لیست توضیحات مختص به خود را دارد
+          </dt>
+          <dd class="description-details rtl">
+            تگ ها : &lt;dl&gt; و &lt;dt&gt; و &lt;dd&gt;
+          </dd>
+        </dl>
+      </div>
+      <p class="title rtl">Ordered Lists</p>
+      <div class="holder">
+       <div class="details"> <ul>
+            <li class="description rtl">برای شروع نوشتن این لیست و اینکه به مرورگر بفهمانیم در حال استفاده از این لیست هستیم از تگ &lt;ol&gt; استفاده می کنیم</li>
+            <li class="description rtl">هر آیتمی که می خواهیم در لیست مان باشد باید بین &lt;li&gt; و &lt;li/&gt; نوشته شود</li>
+        </ul> </div>
+        <div class="code-box">
+          <code>
+<pre>&lt;body&gt;
+    &lt;ol&gt;
+        &lt;li&gt;سیب&lt;/li&gt;
+        &lt;li&gt;انبه&lt;/li&gt;
+        &lt;li&gt;پرتقال&lt;/li&gt;
+        &lt;li&gt;نارنگی&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/body&gt;</pre>
+          </code>
+        </div>
+        <img src="image3.png" alt="">
+        <ol class="list1">
+            <li>سیب</li>
+            <li>انبه</li>
+            <li>پرتقال</li>
+            <li>نارنگی</li>
+        </ol>
+      </div>
+      <p class="title rtl">CSS برای Ordered Lists</p>
+      <div class="holder">
+        <div class="details"> <ul>
+            <li class="description rtl">برای تغییر نوع شمارش (استفاده از اعداد رومی و ... به جای عدد) از propery , list-style-type در کد های CSS استفاده می کنیم VALUE های این property به شرح زیر است :</li>
+        </ul> </div>
+        <div class="code-box">
+          <code>
+<pre>&lt;head&gt;
+    &lt;syle&gt;ol{list-style-type: lower-roman;}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ol&gt;
+        &lt;li&gt;سیب&lt;/li&gt;
+        &lt;li&gt;انبه&lt;/li&gt;
+        &lt;li&gt;پرتقال&lt;/li&gt;
+        &lt;li&gt;نارنگی&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/body&gt;</pre>
+          </code>
+        </div>
+        <img src="image3.png" alt="">
+        <ol class="list2 description-details">
+            <li>سیب</li>
+            <li>انبه</li>
+            <li>پرتقال</li>
+            <li>نارنگی</li>
+        </ol>
+        <dl class="description-details ltr">
+            <dt>decimal</dt>
+            <dd>1 2 3</dd>
+            <dt>decimal-leading-zero</dt>
+            <dd>01 02 03</dd>
+            <dt>lower-alpha</dt>
+            <dd>a b c</dd>
+            <dt>upper-alpha</dt>
+            <dd>A B C</dd>
+            <dt>lower-roman</dt>
+            <dd>i. ii. iii.</dd>
+            <dt>upper-roman</dt>
+            <dd>I. II. III.</dd>
+        </dl>
+      </div>
+      <p class="title rtl">Unordered Lists</p>
+      <div class="holder">
+        <div class="details">  <ul>
+            <li class="description rtl">برای شروع نوشتن این لیست و اینکه به مرورگر بفهمانیم در حال استفاده از این لیست هستیم از تگ &lt;ul&gt; استفاده می کنیم</li>
+            <li class="description rtl">هر آیتمی که می خواهیم در لیست مان باشد باید بین &lt;li&gt; و &lt;/li&gt; نوشته شود</li>
+        </ul> </div>
+        <div class="code-box">
+          <code>
+<pre>
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;home&lt;/li&gt;
+        &lt;li&gt;library&lt;/li&gt;
+        &lt;li&gt;box&lt;/li&gt;
+        &lt;li&gt;email&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;</pre>
+          </code>
+        </div>
+        <img src="image3.png" alt="">
+        <ul class="list1">
+            <li>home</li>
+            <li>library</li>
+            <li>box</li>
+            <li>email</li>
+        </ul>
+      </div>
+      <p class="title rtl">CSS برای Unordered Lists</p>
+      <div class="holder">
+        <div class="details">  <ul>
+            <li class="description rtl">برای شروع نوشتن این لیست و اینکه به مرورگر بفهمانیم در حال استفاده از این لیست هستیم از تگ &lt;ul&gt; استفاده می کنیم</li>
+            <li class="description rtl">هر آیتمی که می خواهیم در لیست مان باشد باید بین &lt;li&gt; و &lt;/li&gt; نوشته شود</li>
+        </ul> </div>
+        <div class="code-box">
+          <code>
+<pre>&lt;head&gt;
+    &lt;syle&gt;ul{list-style-type: square;}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;home&lt;/li&gt;
+        &lt;li&gt;library&lt;/li&gt;
+        &lt;li&gt;box&lt;/li&gt;
+        &lt;li&gt;email&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;</pre>
+          </code>
+        </div>
+        <img src="image3.png" alt="">
+        <ul class="list3">
+            <li>home</li>
+            <li>library</li>
+            <li>box</li>
+            <li>email</li>
+        </ul>
+        <ul class="description-details ltr">
+            <li style="list-style-type: none;">none</li>
+            <li style="list-style-type: disc;">disc</li>
+            <li style="list-style-type: circle;">circle</li>
+            <li style="list-style-type: square;">square</li>
+        </ul>
+        <p class="description rtl" style="text-align: center;">در فصل های آتی یاد خواهیم گرفت چگونه bullets مورد نظر خود را در لیست مان قرار دهیم</p>
+      </div>
+      <p class="title rtl">Definition Lists</p>
+      <div class="holder">
+        <div class="details">  <ul>
+            <li class="description rtl">برای شروع نوشتن این لیست و اینکه به مرورگر بفهمانیم در حال استفاده از این لیست هستیم از تگ &lt;dl&gt; استفاده می کنیم</li>
+            <li class="description rtl">هر آیتمی که می خواهیم در لیست مان باشد باید بین &lt;dt&gt; و &lt;/dt&gt; نوشته شود</li>
+            <li class="description rtl">توضیحات هر آیتم باید بلافاصله بعد از تگ های آیتم درون تگ &lt;dd&gt; و &lt;/dd&gt; نوشته شود</li>
+        </ul>  <div class="details"></div>
+        <div class="code-box">
+          <code>
+<pre>
+&lt;body&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;Sashimi&lt;/dt&gt;
+        &lt;dd&gt;Sliced raw fish that is served with condiments.&lt;/dd&gt;
+        &lt;dt&gt;Scale&lt;/dt&gt;
+        &lt;dd&gt;A device used to measure weight of ingredients.&lt;/dd&gt;
+        &lt;dt&gt;Scamorze&lt;/dt&gt;
+        &lt;dd&gt;An Italian cheese usually made from cow's milk.&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/body&gt;</pre>
+          </code>
+        </div>
+        <img src="image3.png" alt="">
+<dl class="description-details ltr">
+    <dt>Sashimi</dt>
+    <dd>Sliced raw fish that is served with condiments.</dd>
+    <dt>Scale</dt>
+    <dd>A device used to measure weight of ingredients.</dd>
+    <dt>Scamorze</dt>
+    <dd>An Italian cheese usually made from cow's milk.</dd>
+</dl>
+      </div>
+    </div>
+      <p class="title rtl">Nested Lists</p>
+      <div class="holder">
+        <div class="details">  <ul>
+            <li class="description rtl">می توان در تگ های &lt;li&gt; پس از نوشتن نام آیتم تگ های &lt;ol&gt; و &lt;ul&gt; قرار داد که موجب زیر لیست می شود و می توان به کمک آن لیستی جدید درون لیست موجود نمایش داد.</li>
+        </ul>  </div>
+        <div class="code-box">
+          <code>
+<pre>
+ &lt;ul&gt;
+&lt;li&gt;متوسطه دوره اول
+    &lt;ol&gt;
+        &lt;li&gt;هفتم&lt;/li&gt;
+        &lt;li&gt;هشتم&lt;/li&gt;
+        &lt;li&gt;نهم&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;متوسطه دوره دوم
+    &lt;ol&gt;
+        &lt;li&gt;دهم&lt;/li&gt;
+        &lt;li&gt;یازدهم&lt;/li&gt;
+        &lt;li&gt;دوازدهم&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/li&gt;
+ &lt;/ul&gt;
+    </pre>
+          </code>
+        </div>
+        <img src="image3.png" alt="">
+<ul class="description-details ltr">
+<li>متوسطه اول
+    <ol>
+        <li>هفتم</li>
+        <li>هشتم</li>
+        <li>نهم</li>
+    </ol>
+</li>
+<li>متوسطه دوم
+<ol>
+<li>دهم</li>
+<li>یازدهم</li>
+<li>دوازدهم</li>
+</ol>
+</li>
+</ul>
+      </div>
+    </div>
+  </body>
+</html>
