@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Unit7</title>
+</head>
+
+<body>
+    <!-- START OF HEADER DEFINITION -->
+    <div class="header" dir="rtl">
+        <div class="logo">
+            <a href="https://www.mftplus.com">
+                <img src="https://mftplus.com/theme/images/mftlogo.png" alt="mft logo" class="mftlogo" />
+            </a>
+        </div>
+        <div class="links">
+            <a class="link" href="../Unit1/index.html">فصل 1</a>
+            <a class="link" href="../Unit2/index.html">فصل 2</a>
+            <a class="link" href="../Unit3/index.html">فصل 3</a>
+            <a class="link" href="../Unit4/index.html">فصل 4</a>
+            <a class="link" href="../Unit5/index.html">فصل 5</a>
+            <a class="link" href="../Unit6/index.html">فصل 6</a>
+            <a class="link" href="../Unit7/index.html">فصل 7</a>
+        </div>
+    </div>
+    <!-- END OF HEADER DEFINITION -->
+    <div class="guide">
+        <p class="title rtl">فصل هفتم</p>
+        <p class="title rtl">جدول ها</p>
+        <p class="title lrt">&lt;table&gt; و &lt;/table&gt;</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای ساخت یک جدول از المان &lt;table&gt; و &lt;/table&gt; استفاده
+                        می کنیم، این المان دارای المان های اختصاصی است که درون آن قرار
+                        گرفته و جدول زا می سازند.
+                    </li>
+                    <li class="description rtl">
+                        المان هایی که درون المان &lt;table&gt; و &lt;/table&gt; قرار می
+                        گیرند به شرح زیر است :
+                    </li>
+                    <div style="padding: 20px">
+                        <div class="rows" style="background-color: orange">
+                            &lt;tr&gt; &lt;/tr&gt;
+                        </div>
+                        <div class="rows" style="background-color: rgb(21, 255, 0)">
+                            &lt;th&gt; &lt;/th&gt;
+                        </div>
+                        <div class="rows" style="background-color: rgb(0, 212, 106)">
+                            &lt;td&gt; &lt;/td&gt;
+                        </div>
+                        <div class="rows" style="background-color: rgb(98, 0, 255)">
+                            &lt;caption&gt; &lt;/caption&gt;
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <p class="title lrt">Cell & Rows</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای ایجاد هر row در جدول کافی است از تگ &lt;tr&gt; &lt;/tr&gt;
+                        استفاده کنیم.
+                    </li>
+                    <li class="description rtl">
+                        برای تعریف هر سلول از تگ &lt;td&gt; &lt;/td&gt; استفاده کرده و هر
+                        چیزی که می خواهیم درون سلول بنویسیم در آن وارد می کنیم.
+                    </li>
+                </ul>
+            </div>
+            <div class="code-box">
+                <code>
+            <pre>
+&lt;table&gt;
+  <span style="color: violet;">&lt;tr&gt;
+     &lt;td&gt;علی&lt;/td&gt;
+     &lt;td&gt;قربانی&lt;/td&gt;
+     &lt;td&gt;123456789&lt;/td&gt;
+  &lt;/tr&gt;</span>
+  <span style="color: rgb(21, 255, 0);">&lt;tr&gt;
+     &lt;td&gt;پارسا&lt;/td&gt;
+     &lt;td&gt;پورراستگو&lt;/td&gt;
+     &lt;td&gt;123456789&lt;/td&gt;
+  &lt;/tr&gt;</span>
+&lt;/table&gt;
+</pre>
+          </code>
+            </div>
+            <img src="image1.png" alt="" />
+            <table class="example">
+                <tr>
+                    <td>علی</td>
+                    <td>قربانی</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>پارسا</td>
+                    <td>پورراستگو</td>
+                    <td>123456789</td>
+                </tr>
+            </table>
+        </div>
+        <p class="title ltr">Table header</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای آنکه سلول عنوان را در جدول به کار گرفته و برای اینکه ربای
+                        جدول عنوان بگذاریم کافی است به جای المان &lt;td&gt; &lt;/td&gt; از
+                        المان &lt;th&gt; &lt;/th&gt; استفاده کنیم.
+                    </li>
+                </ul>
+            </div>
+            <div class="code-box">
+                <code>
+            <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+     &lt;th&gt;لیست&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+     &lt;td&gt;علی&lt;/td&gt;
+     &lt;td&gt;قربانی&lt;/td&gt;
+     &lt;td&gt;123456789&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+     &lt;td&gt;پارسا&lt;/td&gt;
+     &lt;td&gt;پورراستگو&lt;/td&gt;
+     &lt;td&gt;123456789&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre
+            >
+          </code>
+            </div>
+            <img src="image1.png" alt="" />
+            <table class="example">
+                <tr>
+                    <th>لیست</th>
+                </tr>
+                <tr>
+                    <td>علی</td>
+                    <td>قربانی</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>پارسا</td>
+                    <td>پورراستگو</td>
+                    <td>123456789</td>
+                </tr>
+            </table>
+        </div>
+        <p class="title rtl">&lt;caption&gt; &lt;/caption&gt;</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای اعمال توضیحات برای جدول از المان &lt;caption&gt;
+                        &lt;/caption&gt; استفاده می کنیم.
+                    </li>
+                    <div class="code-box">
+                        <code>
+                <pre>
+&lt;table&gt;
+  &lt;caption&gt;1401/09/09&lt;/caption&gt;
+  &lt;tr&gt;
+     &lt;th&gt;لیست&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+     &lt;td&gt;علی&lt;/td&gt;
+     &lt;td&gt;قربانی&lt;/td&gt;
+     &lt;td&gt;123456789&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+     &lt;td&gt;پارسا&lt;/td&gt;
+     &lt;td&gt;پورراستگو&lt;/td&gt;
+     &lt;td&gt;123456789&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre
+                >
+              </code>
+                    </div>
+                    <img src="image1.png" alt="" />
+                    <table class="example">
+                        <caption>
+                            1401/09/09
+                        </caption>
+                        <tr>
+                            <th>لیست</th>
+                        </tr>
+                        <tr>
+                            <td>علی</td>
+                            <td>قربانی</td>
+                            <td>123456789</td>
+                        </tr>
+                        <tr>
+                            <td>پارسا</td>
+                            <td>پورراستگو</td>
+                            <td>123456789</td>
+                        </tr>
+                    </table>
+                    <li class="description rtl">
+                        Caption باید بلافاصله بعد از تگ table نوشته شود.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="title rtl">Border</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای تنظیمات بردر کافی است در کد های CSS ابتدا نام تگ های table,
+                        td, th را به عنوان سلکتور (table در بردر دور کل جدول) ، (th, td
+                        برای دور هر سلکتور) استفاده می کنیم سپس از پراپرتی border استفاده
+                        کرده و مقادیر رنگ، قطر و استایل را برای آن قرار می دهیم.
+                    </li>
+                </ul>
+            </div>
+            <div class="code-box">
+                <code>
+            <pre>
+&lt;style&gt;
+   table, th, td{border: rgb(0, 0, 0) 2px solid;}
+&lt;/style&gt;</pre
+            >
+          </code>
+            </div>
+            <img src="image1.png" alt="" style="width: 50px" />
+            <table class="example" style="border: black 2px solid">
+                <caption>
+                    1401/09/09
+                </caption>
+                <tr style="border: black 2px solid">
+                    <th style="border: black 2px solid">لیست</th>
+                </tr>
+                <tr style="border: black 2px solid">
+                    <td style="border: black 2px solid">علی</td>
+                    <td style="border: black 2px solid">قربانی</td>
+                    <td style="border: black 2px solid">123456789</td>
+                </tr>
+                <tr style="border: black 2px solid">
+                    <td style="border: black 2px solid">پارسا</td>
+                    <td style="border: black 2px solid">پورراستگو</td>
+                    <td style="border: black 2px solid">123456789</td>
+                </tr>
+            </table>
+        </div>
+        <p class="title rtl">border-collapse</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای تنظیم فاصله دار بودن و یا یک دست بودن بردر های جدول از
+                        border-collapse property استفاده کرده که دو مقدار زیر را دارا است
+                        :
+                    </li>
+                    <li class="description rtl">
+                        Collapse : سلول ها بدون فاصله از هم قرار می گیرند.
+                    </li>
+                    <div class="code-box">
+                        <code>
+                <pre>
+&lt;style&gt;
+   table, th, td{border: rgb(0, 0, 0) 2px solid; border-collapse: collapse;}
+&lt;/style&gt;</pre
+                >
+              </code>
+                    </div>
+                    <img src="image1.png" alt="" style="width: 50px" />
+                    <table class="example" style="border: black 2px solid">
+                        <caption>
+                            1401/09/09
+                        </caption>
+                        <tr style="border: black 2px solid">
+                            <th style="border: black 2px solid">لیست</th>
+                        </tr>
+                        <tr style="border: black 2px solid">
+                            <td style="border: black 2px solid">علی</td>
+                            <td style="border: black 2px solid">قربانی</td>
+                            <td style="border: black 2px solid">123456789</td>
+                        </tr>
+                        <tr style="border: black 2px solid">
+                            <td style="border: black 2px solid">پارسا</td>
+                            <td style="border: black 2px solid">پورراستگو</td>
+                            <td style="border: black 2px solid">123456789</td>
+                        </tr>
+                    </table>
+                    <li class="description rtl">
+                        Separate : سلول ها دارای فاصله باشند.
+                    </li>
+                    <div class="code-box">
+                        <code>
+                <pre>
+&lt;style&gt;
+   table, th, td{border: rgb(0, 0, 0) 2px solid; border-collapse: separate;}
+&lt;/style&gt;</pre
+                >
+              </code>
+                    </div>
+                    <img src="image1.png" alt="" style="width: 50px" />
+                    <table class="example" style="border: black 2px solid; border-collapse: separate">
+                        <caption>
+                            1401/09/09
+                        </caption>
+                        <tr style="border: black 2px solid; border-collapse: separate">
+                            <th style="border: black 2px solid; border-collapse: separate">
+                                لیست
+                            </th>
+                        </tr>
+                        <tr style="border: black 2px solid; border-collapse: separate">
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                علی
+                            </td>
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                قربانی
+                            </td>
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                123456789
+                            </td>
+                        </tr>
+                        <tr style="border: black 2px solid; border-collapse: separate">
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                پارسا
+                            </td>
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                پورراستگو
+                            </td>
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                123456789
+                            </td>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+        </div>
+        <p class="title rtl">Spacing & padding</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        اگر border-collapse در حالت separate باشد می توان به کمک
+                        border-spacing property اندازه فاصله بین سلول ها را تنظیم کرد.
+                    </li>
+                    <div class="code-box">
+                        <code>
+                <pre>
+&lt;style&gt;
+   table, th, td{border: rgb(0, 0, 0) 2px solid; border-collapse: collapse;
+   border-spacing: 8px;}
+&lt;/style&gt;</pre
+                >
+              </code>
+                    </div>
+                    <img src="image1.png" alt="" style="width: 50px" />
+                    <table class="example" style="
+                border: black 2px solid;
+                border-collapse: separate;
+                border-spacing: 8px;
+              ">
+                        <caption>
+                            1401/09/09
+                        </caption>
+                        <tr style="
+                  border: black 2px solid;
+                  border-collapse: separate;
+                  border-spacing: 8px;
+                ">
+                            <th style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                  ">
+                                لیست
+                            </th>
+                        </tr>
+                        <tr style="
+                  border: black 2px solid;
+                  border-collapse: separate;
+                  border-spacing: 8px;
+                ">
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                  ">
+                                علی
+                            </td>
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                  ">
+                                قربانی
+                            </td>
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                  ">
+                                123456789
+                            </td>
+                        </tr>
+                        <tr style="
+                  border: black 2px solid;
+                  border-collapse: separate;
+                  border-spacing: 8px;
+                ">
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                  ">
+                                پارسا
+                            </td>
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                  ">
+                                پورراستگو
+                            </td>
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                  ">
+                                123456789
+                            </td>
+                        </tr>
+                    </table>
+                    <li class="description rtl">
+                        Separate : سلول ها دارای فاصله باشند.
+                    </li>
+                    <div class="code-box">
+                        <code>
+                <pre>
+&lt;style&gt;
+   table, th, td{border: rgb(0, 0, 0) 2px solid; border-collapse: separate;
+   border-spacing: 8px; padding: 10px;}
+&lt;/style&gt;</pre
+                >
+              </code>
+                    </div>
+                    <img src="image1.png" alt="" style="width: 50px" />
+                    <table class="example" style="
+                border: black 2px solid;
+                border-collapse: separate;
+                border-spacing: 8px;
+                padding: 10px;
+                width: 300px;
+              ">
+                        <caption>
+                            1401/09/09
+                        </caption>
+                        <tr style="
+                  border: black 2px solid;
+                  border-collapse: separate;
+                  border-spacing: 8px;
+                  padding: 10px;
+                ">
+                            <th style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                    padding: 10px;
+                  ">
+                                لیست
+                            </th>
+                        </tr>
+                        <tr style="
+                  border: black 2px solid;
+                  border-collapse: separate;
+                  border-spacing: 8px;
+                  padding: 10px;
+                ">
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                    padding: 10px;
+                  ">
+                                علی
+                            </td>
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                    padding: 10px;
+                  ">
+                                قربانی
+                            </td>
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                    padding: 10px;
+                  ">
+                                123456789
+                            </td>
+                        </tr>
+                        <tr style="
+                  border: black 2px solid;
+                  border-collapse: separate;
+                  border-spacing: 8px;
+                  padding: 10px;
+                ">
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                    padding: 10px;
+                  ">
+                                پارسا
+                            </td>
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                    padding: 10px;
+                  ">
+                                پورراستگو
+                            </td>
+                            <td style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    border-spacing: 8px;
+                    padding: 10px;
+                  ">
+                                123456789
+                            </td>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+        </div>
+        <p class="title ltr">Colspan & Rowspan</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای بزرگ کردن به صورت افقی از اتریبیوت colspan در تگ آغازین سلول
+                        مورد نظر استفاده و مقدار آن را به اندازه تعداد سلولی می گذاریم که
+                        می خواهیم بزرگ شود به این معنا که یک سلول به اندازه چند سلول نرمال
+                        بزرگ شود.
+                    </li>
+                    <div class="code-box">
+                        <code>
+                <pre>
+&lt;table&gt;
+  &lt;caption&gt;1401/09/09&lt;/caption&gt;
+     &lt;tr&gt;
+     <span style="color: rgb(21, 255, 0);">&lt;th colspan="3"&gt;لیست&lt;/th&gt;</span>
+  &lt;/tr&gt;
+  &lt;tr&gt;
+     &lt;td&gt;علی&lt;/td&gt;
+     &lt;td&gt;قربانی&lt;/td&gt;
+     &lt;td&gt;123456789&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+     &lt;td&gt;پارسا&lt;/td&gt;
+     &lt;td&gt;پورراستگو&lt;/td&gt;
+     &lt;td&gt;123456789&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+              </code>
+                    </div>
+                    <img src="image1.png" alt="" style="width: 80px" />
+                    <table class="example" style="border: black 2px solid; border-collapse: separate">
+                        <caption>
+                            1401/09/09
+                        </caption>
+                        <tr style="border: black 2px solid; border-collapse: separate">
+                            <th style="
+                    border: black 2px solid;
+                    border-collapse: separate;
+                    text-align: center;
+                  " colspan="3">
+                                لیست
+                            </th>
+                        </tr>
+                        <tr style="border: black 2px solid; border-collapse: separate">
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                علی
+                            </td>
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                قربانی
+                            </td>
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                123456789
+                            </td>
+                        </tr>
+                        <tr style="border: black 2px solid; border-collapse: separate">
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                پارسا
+                            </td>
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                پورراستگو
+                            </td>
+                            <td style="border: black 2px solid; border-collapse: separate">
+                                123456789
+                            </td>
+                        </tr>
+                    </table>
+                    <img src="image1.png" alt="" style="width: 80px" />
+                    <div class="text-box">
+                        <p>
+                            همانطور که می بینید چون مقدار colspan برای سلول حاوی کله "لیست"
+                            برابر 3 است انداز این سلول به صورت افقی به اندازه 3 سلول معمولی
+                            است.
+                        </p>
+                    </div>
+                    <li class="description rtl">
+                        برای بزرگ کردن به صورت عمودی از اتریبیوت rowspan در تگ آغازین سلول مورد نظر استفاده و مقدار آن
+                        را به اندازه تعداد سلولی می گذاریم که می خواهیم بزرگ شود، به این معنا که یک سلول به اندازه چند
+                        سلول نرمال بزرگ شود.
+                    </li>
+                    <div class="code-box">
+                        <code>
+                <pre>
+&lt;table&gt;
+     &lt;tr&gt;
+     &lt;th&gt;Name&lt;/th&gt;
+     &lt;td&gt;Jill&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+     <span style="color: orange;">&lt;th rowspan="2"&gt;Phone&lt;/th&gt;</span>
+     &lt;td&gt;555-1234&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+     &lt;td&gt;555-8745&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+              </code>
+                    </div>
+                    <img src="image1.png" alt="" style="width: 80px" />
+                    <table class="example" style="direction: ltr; text-align: center; width: 220px;">
+                        <tr>
+                            <th style="border: black 2px solid;">Name</th>
+                            <td style="border: black 2px solid;">Jill</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" style="border: black 2px solid;">Phone</th>
+                            <td style="border: black 2px solid;">555-1234</td>
+                        </tr>
+                        <tr>
+                            <td style="border: black 2px solid;">555-8745</td>
+                        </tr>
+                    </table>
+                    <img src="image1.png" alt="" style="width: 80px" />
+                    <div class="text-box">
+                        <p>
+                            همانطور که می بینید چون مقدار rowspan برای سلول حاوی کلمه "phone" برابر 2 است اندازه این
+                            سلول به صورت عمودی اندازه 2 سلول معمولی است.
+                        </p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <p class="copyright">&copy; Alireza Heydari & Parsa Pourrastgoo</p>
+</body>
+
+</html>
