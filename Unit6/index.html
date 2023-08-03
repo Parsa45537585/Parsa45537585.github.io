@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Unit6</title>
+  </head>
+
+  <body>
+    <!-- START OF HEADER DEFINITION -->
+    <div class="header" dir="rtl">
+      <div class="logo">
+        <a href="https://www.mftplus.com">
+          <img
+            src="https://mftplus.com/theme/images/mftlogo.png"
+            alt="mft logo"
+            class="mftlogo"
+          />
+        </a>
+      </div>
+      <div class="links">
+        <a class="link" href="../Unit1/index.html">فصل 1</a>
+        <a class="link" href="../Unit2/index.html">فصل 2</a>
+        <a class="link" href="../Unit3/index.html">فصل 3</a>
+        <a class="link" href="../Unit4/index.html">فصل 4</a>
+        <a class="link" href="../Unit5/index.html">فصل 5</a>
+        <a class="link" href="../Unit6/index.html">فصل 6</a>
+        <a class="link" href="../Unit7/index.html">فصل 7</a>
+      </div>
+    </div>
+    <!-- END OF HEADER DEFINITION -->
+    <div class="guide">
+      <p class="title rtl">فصل ششم</p>
+      <p class="title rtl">فرم ها</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              از فرم ها برای جمع آوری اطلاعات از کاربر و ... استفاده می کنیم.
+            </li>
+          </ul>
+        </div>
+        <h2>HOW FORMS WORK</h2>
+        <div class="description ltr" style="text-align: center">
+          I - A user fills in a form and then presses a button to submit the
+          information to the server.
+        </div>
+        <img src="image1.png" alt="" style="rotate: 90deg; width: 50px" />
+        <div
+          class="description ltr"
+          style="text-align: center; margin-top: 0px"
+        >
+          II - The name of each form control is sent to the server along with
+          the value the user enters or selects.
+        </div>
+        <img src="image1.png" alt="" style="rotate: 90deg; width: 50px" />
+        <div
+          class="description ltr"
+          style="text-align: center; margin-top: 0px"
+        >
+          III - The server processes the information using a programming
+          language uch as PHP, C#, VB.net or Java. It may also store the
+          information in a database
+        </div>
+        <img src="image1.png" alt="" style="rotate: 90deg; width: 50px" />
+        <div
+          class="description ltr"
+          style="text-align: center; margin-top: 0px"
+        >
+          IV - The server creates a new page to send back to the browser based
+          on the information received.
+        </div>
+      </div>
+      <p class="title lrt">&lt;form&gt; و &lt;/form&gt;</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              برای ایجاد یک فرم از تگ form استفاده می کنیم که درون این تگ هم تگ
+              های مختص به خودش برای شکل گیری فرم قرار می گیرد در اصل فرم
+              کانتینری برای المان های دیگر است.
+            </li>
+          </ul>
+        </div>
+        <div class="code-box">
+          <code>
+            <pre>
+&lt;form&gt;
+    .
+    form elements
+    .
+&lt;/form&gt;
+</pre
+            >
+          </code>
+        </div>
+      </div>
+      <p class="title ltr">Action Atrribute</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              این اتریبیوت که یک اتریبیوت اساسی و اجباری برای المان form است
+              عملی که باید پس از ارائه اطلاعات توسط کاربر انجام شود را تشریح می
+              کند در اصل برای ارسال اطلاعات فرم به سرور استفاده می شود.
+            </li>
+            <li class="description rtl">
+              مقدار این اتریبیوت باید آدرس فایلی باشد که در سرور اطلاعات فرم را
+              دریافت می کند (form-handler).
+            </li>
+          </ul>
+        </div>
+        <div class="code-box">
+          <code>
+            <pre>&lt;form action="action_page.php"&gt;</pre>
+          </code>
+        </div>
+      </div>
+      <p class="title rtl">المان هایی که درون form قرار می گیرند</p>
+      <div class="holder">
+        <div style="padding: 20px">
+          <div class="rows" style="background-color: orange">&lt;input&gt;</div>
+          <div class="rows" style="background-color: rgb(170, 255, 0)">
+            &lt;lable&gt;
+          </div>
+          <div class="rows" style="background-color: rgb(21, 255, 0)">
+            &lt;select&gt; & &lt;option&gt;
+          </div>
+          <div class="rows" style="background-color: rgb(0, 212, 106)">
+            &lt;textarea&gt;
+          </div>
+          <div class="rows" style="background-color: rgb(0, 157, 255)">
+            &lt;fieldset&gt; & &lt;legend&gt;
+          </div>
+          <div class="rows" style="background-color: rgb(98, 0, 255)">
+            &lt;button&gt;
+          </div>
+        </div>
+      </div>
+      <p class="title rtl">&lt;input&gt;</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              INPUT یکی از پرکاربرد ترین المان ها در ساخت فرم است که درون المان
+              FORM قرار می گیرد. از تگ input باری ورود اطلاعات توسط کاربر
+              استفاده می شود این اطلاعات می تواند انواع مختلفی چون متن، تاریخ و
+              ... داشته باشد برای تعیین نوع اطلاعات ورودی از اتریبیوت type
+              استفاده می کنیم. در اصل نحوه نمایش المان input بسیار متغیر است و
+              بستگی به اتریبیوت type آن دارد.
+            </li>
+            <li class="description rtl">المان input از void element ها است.</li>
+          </ul>
+        </div>
+        <table dir="ltr">
+          <th>Type</th>
+          <th>Description</th>
+          <tr style="background-color: rgb(228, 228, 228)">
+            <td>&lt;input type="text"&gt;</td>
+            <td>Displays a single-line text input field</td>
+          </tr>
+          <tr>
+            <td>&lt;input type="radio"&gt;</td>
+            <td>Displays a radio button (for selecting one of many choices)</td>
+          </tr>
+          <tr style="background-color: rgb(228, 228, 228)">
+            <td>&lt;input type="checkbox"&gt;</td>
+            <td>
+              Displays a checkbox (for selecting zero or more of many choices)
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;input type="submit"&gt;</td>
+            <td>Displays a submit button (for submitting the form)</td>
+          </tr>
+          <tr style="background-color: rgb(228, 228, 228)">
+            <td>&lt;input type="button"&gt;</td>
+            <td>Displays a clickable button</td>
+          </tr>
+        </table>
+      </div>
+      <p class="title rtl">
+        انواع مقادیر برای type را می توانید در شکل زیر ببینید
+      </p>
+      <div class="holder">
+        <div class="code-box" style="display: inline-block">
+          <code>
+            <pre>
+&lt;form action="/Parsa.php&gt;
+    &lt;input type="button"&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;input type="color"&gt;
+    &lt;input type="date"&gt;
+    &lt;input type="datetime-local"&gt;
+    &lt;input type="email"&gt;
+    &lt;input type="file"&gt;
+    &lt;input type="hidden"&gt;
+    &lt;input type="image"&gt;
+    &lt;input type="month"&gt;
+    &lt;input type="number"&gt;
+    &lt;input type="password"&gt;
+    &lt;input type="radio"&gt;
+    &lt;input type="range"&gt;
+    &lt;input type="reset"&gt;
+    &lt;input type="search"&gt;
+    &lt;input type="submit"&gt;
+    &lt;input type="tel"&gt;
+    &lt;input type="text"&gt;
+    &lt;input type="time"&gt;
+    &lt;input type="url"&gt;
+    &lt;input type="week"&gt;
+&lt;/form&gt;</pre
+            >
+          </code>
+        </div>
+        <img src="image1.png" alt="" />
+        <ul
+          style="
+            text-align: left;
+            font-family: Nazanin;
+            list-style-type: none;
+            display: inline-block;
+          "
+        >
+          <li><input type="button" value="Button" /></li>
+          <li><input type="checkbox" /></li>
+          <li><input type="color" /></li>
+          <li><input type="date" /></li>
+          <li><input type="datetime-local" /></li>
+          <li><input type="email" /></li>
+          <li><input type="file" /></li>
+          <li><input type="hidden" /></li>
+          <li><input type="image" /></li>
+          <li><input type="month" /></li>
+          <li><input type="number" /></li>
+          <li><input type="password" /></li>
+          <li><input type="radio" /></li>
+          <li><input type="range" /></li>
+          <li><input type="reset" /></li>
+          <li><input type="search" /></li>
+          <li><input type="submit" /></li>
+          <li><input type="tel" /></li>
+          <li><input type="text" /></li>
+          <li><input type="time" /></li>
+          <li><input type="url" /></li>
+          <li><input type="week" /></li>
+        </ul>
+      </div>
+      <p class="title rtl">Attribute های بیشتر برای input</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              Type : با این اتریبیوت پیش تر آشنا شدید.
+            </li>
+            <li class="description rtl">
+              name : این اتریبیوت از اتریبیوت های اجباری است با استفاده از آن یک
+              نام برای المان input تعیین می شود سپس سرور با همین نام اطلاعات
+              وروردی را دریافت می کند (این اتریبیوت برای دیگر المان ها نیز
+              کاربرد دارد).
+            </li>
+            <li class="description rtl">
+              اتریبیوت name برای هر input باید مختلف باشد و تکراری نباشد.
+            </li>
+          </ul>
+        </div>
+        <div class="code-box">
+          <code>
+            <pre>&lt;input type="text" name="hi"&gt;</pre>
+          </code>
+        </div>
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              Value : می توان با استفاده از ان یک مقدار پیش فرض برای المان input
+              قرار داد (این اتریبیوت برای تگ های option نیز کاربرد دارد).
+            </li>
+          </ul>
+        </div>
+        <div class="code-box">
+          <code>
+            <pre>&lt;input type="text" name="hi" value="123"&gt;</pre>
+          </code>
+        </div>
+        <img src="image1.png" alt="" style="width: 40px" />
+        <input
+          type="text"
+          name="hi"
+          value="123"
+          style="
+            margin: 20px;
+            padding: 12px 10px;
+            border-radius: 3px;
+            border: 1px solid white;
+          "
+        />
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              Placeholder : متن نوشته شده درون باکس input.
+            </li>
+          </ul>
+        </div>
+        <div class="code-box">
+          <code>
+            <pre>&lt;input type="text" name="hi" placeholder="کد ملی"&gt;</pre>
+          </code>
+        </div>
+        <img src="image1.png" alt="" style="width: 40px" />
+        <input
+          type="text"
+          name="hi"
+          placeholder="کد ملی"
+          style="
+            margin: 20px;
+            padding: 12px 10px;
+            border-radius: 3px;
+            border: 1px solid white;
+          "
+        />
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              Autocomplete : این اتریبیوت تعیین می کند که به طور اتوماتیک باکس
+              پر شود یا خیر، در اصل به مرورگر اجازه می دهد تا مقدار ورودی را پیش
+              بینی کند و انرا زود تر از آنکه کاربر تکمیلش کند به کاربر پیشنهاد
+              دهد. مقادیر آن نیز yes و no است
+            </li>
+          </ul>
+        </div>
+        <div class="code-box">
+          <code>
+            <pre>
+&lt;input type="text" name="code" placeholder="نام" autocomplete="yes"&gt;</pre
+            >
+          </code>
+        </div>
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              Maxlength : حداکثر کاراکتری که کاربر می تواند وارد المان input
+              کند.
+            </li>
+          </ul>
+        </div>
+        <div class="code-box">
+          <code>
+            <pre>
+&lt;input type="text" name="code" placeholder="نام" maxlength="7"&gt;</pre
+            >
+          </code>
+        </div>
+        <img src="image1.png" alt="" style="width: 40px" />
+        <input
+          type="text"
+          name="code"
+          placeholder="نام"
+          maxlength="7"
+          style="
+            margin: 20px;
+            padding: 12px 10px;
+            border-radius: 3px;
+            border: 1px solid white;
+          "
+        />
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              Required : برای اجباری کردن پر کردن input از این اترییوت استاده می
+              کنیم این اتریبیوت مقدار ندارد.
+            </li>
+          </ul>
+        </div>
+        <div class="code-box">
+          <code>
+            <pre>&lt;form&gt;
+    &lt;lable for="username"&gt;Username:&lt;/lable&gt;
+    &lt;input type="text" id="username" <span style="color: red;">required</span>&gt;
+&lt;/form&gt;</pre>
+          </code>
+        </div>
+      </div>
+      <p class="title ltr">&lt;label&gt;&lt;/label&gt;</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              از این المان برای راهنمایی کاربر که کدام داده را وارد کدام قسمت
+              کند استفاده می شود.
+            </li>
+            <li class="description rtl">
+              این المان یک اتریبیوت به نام for دارد که مقدار آن باید با مقدار id
+              المان مربوطه باشد تا مرورگر بفهمد کدام label مربوط به کدام المان
+              فرم ما است (فقط برای input
+              <span
+                style="text-decoration: underline; text-underline-offset: 5px"
+                >نیست</span
+              >)
+            </li>
+          </ul>
+        </div>
+        <div class="code-box" style="display: inline-block">
+          <code>
+            <pre>
+&lt;form action="/Parsa.php&gt;
+    &lt;label <span style="color: lightskyblue;">for="fname"</span>&gt;First name:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text <span style="color: lightskyblue;">id="fname"</span> name="fname"&gt;&lt;br&gt;
+    &lt;label <span style="color: lightcoral;">for="lname"</span>&gt;Last name:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text <span style="color: lightcoral;">id="lname"</span> name="lname"&gt;
+&lt;/form&gt;</pre>
+          </code>
+        </div>
+        <img src="image1.png" alt="" style="width: 70px" />
+        <form
+          action="parsa.php"
+          style="
+            display: inline-block;
+            text-align: left;
+            margin: 20px;
+            padding: 12px 10px;
+            border-radius: 3px;
+            border: 1px solid white;
+          "
+        >
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="lname">Last name:</label><br />
+          <input type="text" id="lname" name="lname" />
+        </form>
+      </div>
+      <p class="title ltr">&lt;select&gt; & &lt;option&gt;</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              استفاده از المان select باعث ایجاد لیست انتخابی (drop-down list)
+              می شود که برای قرار دادن هر آیتم در این لیست از المان
+              &lt;option/&gt; و &lt;option&gt; استفاده می کنیم.
+            </li>
+            <div class="code-box" style="display: inline-block">
+              <code>
+                <pre>
+&lt;form action="/Parsa.php&gt;
+    &lt;label for="a1"&gt;مقطع تحصیلی را معین کنید&lt;/label&gt;
+    &lt;select id="a1" name="paye"&gt;
+      &lt;option value="دهم"&gt;دهم&lt;/option&gt;
+      &lt;option value="یازدهم"&gt;یازدهم&lt;/option&gt;
+      &lt;option value="دوازدهم"&gt;دوازدهم&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/form&gt;</pre
+                >
+              </code>
+            </div>
+            <img src="image1.png" alt="" style="width: 70px" />
+            <form
+              action="/parsa.php"
+              style="
+                display: inline-block;
+                margin: 20px;
+                padding: 12px 10px;
+                border-radius: 3px;
+                border: 1px solid white;
+                direction: rtl;
+              "
+            >
+              <label for="a1">مقطع تحصیلی را معین کنید</label>
+              <select name="paye" id="a1">
+                <option value="دهم">دهم</option>
+                <option value="یازدهم">یازدهم</option>
+                <option value="دوازدهم">دوازدهم</option>
+              </select>
+            </form>
+            <li class="description rtl">
+              با استفاده از اتریبیوت multiple در تگ select می توانید چند مورد را
+              انتخاب کنید.
+            </li>
+            <div class="code-box" style="display: inline-block">
+              <code>
+                <pre>
+&lt;select id="cars" name="cars" size="4" multiple&gt;</pre
+                >
+              </code>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <p class="title ltr">&lt;textarea&gt;</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              از این المان برای وارد کردن متن های طولانی مانند نامه ها و
+              انتقادات و پیشنهادات استفاده می کنند.
+            </li>
+            <li class="description rtl">
+              از اتریبیوت rows برای تعیین تعداد خطوط استفاده می شود.
+            </li>
+            <li class="description rtl">
+              از اتریبیوت cols برای تعیین عرض text box ایجاد شده ستفاده می شود.
+            </li>
+            <li class="description rtl">
+              برای تعیین عرض و ارتفاع علاوه بر اتریبیوت از CSS هم می توان
+              استفاده کرد.
+            </li>
+          </ul>
+        </div>
+        <div class="code-box" style="display: inline-block">
+          <code>
+            <pre>
+&lt;label style="vertical-align: top;" for="text"&gt;انتقادات و پیشنهادات&lt;/label&gt;
+&lt;textarea name="text1" id="text" cols="20" rows="10"&gt;به نظر من&lt;/textarea&gt;</pre
+            >
+          </code>
+        </div>
+        <img src="image1.png" alt="" style="width: 70px" />
+        <form
+          action="parsa.php"
+          style="
+            display: inline-block;
+            text-align: right;
+            direction: rtl;
+            margin: 20px;
+            padding: 12px 10px;
+            border-radius: 3px;
+            border: 1px solid white;
+          "
+        >
+          <label style="vertical-align: top" for="text"
+            >انتقادات و پیشنهادات</label
+          >
+          <textarea name="text1" id="text" cols="20" rows="10"></textarea>
+        </form>
+      </div>
+      <p class="title ltr">&lt;fieldset&gt; & &lt;legend&gt;</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              برای گروه بندی المان های فرم از &lt;fieldset&gt; و برای ایجاد
+              توضیحات برای آن گروه از &lt;legend&gt; استفاده می شود.
+            </li>
+          </ul>
+        </div>
+        <div class="code-box" style="display: inline-block">
+          <code>
+            <pre>
+&lt;form action="/Parsa.php&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;مشخصات تحصیلی&lt;/legend&gt;
+    &lt;input type="text" placeholder="نام مدرسه"&gt;
+    &lt;label for="b1"&gt;تاریخ شروع تحصیل&lt;/label&gt;
+    &lt;input type="date" id="b1"&gt;
+    &lt;label for="a1"&gt;مقطع تحصیلی را معین کنید&lt;/label&gt;
+    &lt;select id="a1" name="paye"&gt;
+      &lt;option value="دهم"&gt;دهم&lt;/option&gt;
+      &lt;option value="یازدهم"&gt;یازدهم&lt;/option&gt;
+      &lt;option value="دوازدهم"&gt;دوازدهم&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre
+            >
+          </code>
+        </div>
+        <img src="image1.png" alt="" style="width: 70px" />
+        <form
+          action="parsa.php"
+          style="
+            display: inline-block;
+            text-align: right;
+            margin: 20px;
+            padding: 12px 10px;
+            border-radius: 3px;
+            border: 1px solid white;
+            direction: rtl;
+          "
+        >
+          <fieldset>
+            <legend>مشخصات تحصیلی</legend>
+            <input type="text" placeholder="نام مدرسه" />
+            <label for="b1">تاریخ شروع تحصیل</label>
+            <input type="date" id="b1" />
+            <label for="a1">مقطع تحصیلی را معین کنید</label>
+            <select name="paye" id="a1">
+              <option value="دهم">دهم</option>
+              <option value="یازدهم">یازدهم</option>
+              <option value="دوازدهم">دوازدهم</option>
+            </select>
+          </fieldset>
+        </form>
+      </div>
+      <p class="title ltr">&lt;button&gt;</p>
+      <div class="holder">
+        <div class="details">
+          <ul>
+            <li class="description rtl">
+              برای قرار دادن دکمه ای که پس از آنکه کاربر فرم را تکمیل کرد با زدن
+              آن از آن اطلاعات را برای سرور ارسال کند از اتریبیوت type استفاده و
+              مقدار آن را submit قرار خواهیم داد.
+            </li>
+            <div class="code-box" style="display: inline-block">
+              <code>
+                <pre>&lt;button type="submit"&gt;ارسال فرم&lt;/button&gt;</pre>
+              </code>
+            </div>
+            <li class="description rtl">
+              روش دیگر قرار دادن این دکمه این است که از تگ input استفاده کرده و
+              مقدار اتریبیوت type را submit قرار دهیم.
+            </li>
+          </ul>
+        </div>
+        <div class="code-box" style="display: inline-block">
+          <code>
+            <pre>&lt;input type="submit" value="ارسال فرم"&gt;</pre>
+          </code>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">&copy; Alireza Heydari & Parsa Pourrastgoo</p>
+  </body>
+</html>

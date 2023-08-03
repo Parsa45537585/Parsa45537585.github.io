@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Nazanin";
+    src: url("../Far_Nazanin.ttf") format("truetype");
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    border: solid 1px rgb(202, 202, 202);
+    border-radius: 5px;
+    background-color: #131212;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.links {
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+.mftlogo {
+    border-radius: 7px;
+    width: 75px;
+    padding: 10px;
+    text-align: right;
+    text-decoration: none;
+    max-height: 75px;
+    margin: 5px 10px 5px 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px white;
+    transition: 1.5s;
+}
+
+.mftlogo:hover {
+    background-color: rgb(39, 223, 255);
+    box-shadow: none;
+}
+
+.link {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 5px 15px;
+    margin: 0px 5px;
+    color: gray;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-family: "Nazanin";
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgba(0, 183, 255, 0.404);
+    transition: 0.5s;
+}
+
+.link:hover {
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 3px;
+    background-color: rgb(0, 183, 255);
+    padding-bottom: 0px;
+}
+
+.copyright {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #f5f5f5;
+	padding: 10px;
+	margin: 0;
+}
+
+/* END OF HEADER DEFINITION */
+
+.guide {
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+    margin-bottom: 40px;
+    width: 99%;
+    border-radius: 5px;
+    height: auto;
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab, #00ff88, #66ff00);
+    background-size: 100% 100%;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.title {
+    font-family: "Nazanin";
+    text-align: center;
+    padding-top: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.middle {
+    text-align: center;
+}
+
+.holder {
+    margin: auto;
+    width: 95%;
+    border: 2px rgba(0, 0, 0, 0.096) solid;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 3px 3px 5px gray;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: black;
+    margin-top: 20px;
+    font-family: "Nazanin";
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.warning {
+    margin-top: 5px;
+}
+
+.code-box {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+    padding: 0px 15px;
+    border-radius: 3px;
+    width: auto;
+    margin: 20px;
+    text-align: left;
+    display: inline-block;
+    margin-left: -50px;
+}
+
+.btn1 {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.description-details {
+    color: black;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 60px;
+    text-align: left;
+    display: inline-block;
+}
+
+.list1 {
+    width: auto;
+    display: inline-block;
+    font-size: x-large;
+    font-family: Nazanin;
+}
+
+.list2 {
+    width: auto;
+    display: inline-block;
+    font-size: x-large;
+    font-family: Nazanin;
+    list-style-type: lower-roman;
+}
+
+.list3 {
+    width: auto;
+    display: inline-block;
+    font-size: x-large;
+    font-family: Nazanin;
+    list-style-type: square;
+}
+
+.details {
+    margin-right: 20px;
+}
+
+.rows {
+    width: 70%;
+    text-align: left;
+    height: 20px;
+    display: block;
+    margin: auto;
+    font-family: Nazanin;
+    font-size: large;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid white 1px;
+}
+
+table {
+    text-align: left;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    font-family: Nazanin;
+    border-collapse: collapse;
+}
+
+tr td {
+    width: 30%;
+}
+
+
