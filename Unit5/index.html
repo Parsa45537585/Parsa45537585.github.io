@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Unit5</title>
+</head>
+
+<body>
+    <!-- START OF HEADER DEFINITION -->
+    <div class="header" dir="rtl">
+        <div class="logo">
+            <a href="https://www.mftplus.com">
+                <img src="https://mftplus.com/theme/images/mftlogo.png" alt="mft logo" class="mftlogo" />
+            </a>
+        </div>
+        <div class="links">
+            <a class="link" href="../Unit1/index.html">فصل 1</a>
+            <a class="link" href="../Unit2/index.html">فصل 2</a>
+            <a class="link" href="../Unit3/index.html">فصل 3</a>
+            <a class="link" href="../Unit4/index.html">فصل 4</a>
+            <a class="link" href="../Unit5/index.html">فصل 5</a>
+            <a class="link" href="../Unit6/index.html">فصل 6</a>
+            <a class="link" href="../Unit7/index.html">فصل 7</a>
+        </div>
+    </div>
+    <!-- END OF HEADER DEFINITION -->
+    <div class="guide">
+        <p class="title rtl">فصل پنجم</p>
+        <p class="title rtl">CSS</p>
+        <p class="title rtl">راه های نوشتن کد های CSS</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        internal - استفاده از تگ style :
+                        <p style="text-align: center; font-family: sfpro;">&lt;style&gt; CSS selector {CSS property: CSS
+                            value;}&lt;/style&gt;</p>
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+            <pre>&lt;style&gt;button{background-color: yellowgreen; color: aliceblue;}&lt;/style&gt;</pre>
+          </code>
+                </div>
+                <ul>
+                    <li class="description rtl">
+                        external - ایجاد دو فایل جداگانه برای HTML و CSS :
+                    <li class="description rtl" style="list-style-type: none;">برای لینک کردن دو فایل HTML و CSS در تگ
+                        LINK از دو اتریبیوت rel و href استفاده می کنیم.</li>
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="parsa/new.css"&gt;
+&lt;/head&gt;
+</pre>
+              </code>
+                </div>
+                <ul>
+                    <li class="description rtl">
+                        inline - در این روش css های هر المان درون opening tag هر المان نوشته شده و مسلما css ها فقط برای
+                        همان المان اعمال می شوند. می توان گفت در این روش style نقش attribute را دارد (این روش به دلایل
+                        مختلف زیاد توصیه نمی شود).
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+&lt;button style="background-color: blue; border: none; color: white;&gt;log in&lt;/button&gt;
+</pre>
+              </code>
+                </div>
+                <ul>
+                    <li class="description rtl">
+                        اولویت در اعمال کد های CSS با روش inline است.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="title rtl">PSEUDO CLASSES</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">برای تعیین CSS در حالتی خاص (مثلا حالتی که ماوس روی المان قرار می گیرد)
+                        کاربرد دارد. برای اعمال pseudo class، پس از انتخاب selector از علامت : بعتوان جدا کننده کمک
+                        گرفته و نام pseudo class را نوشته و تغییرات مورد نظر را در {} می نویسیم.</li>
+                    <li class="description rtl">
+                        hover : از آن برای تغییر استایل المان هنگامی که ماوس روی المان قرار استفاده می شود.
+                        <p style="text-align: center; direction: ltr;">.text:hover{تغییراتی که می خواهیم در المان هنگام
+                            قرارگیری ماوس روی آن ایجاد می شود}</p>
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+button:hover {background-color: blue; color: crimson; <span style="color: #ee3e80;">opacity</span>: 0.5;}
+</pre>
+              </code>
+                </div>
+                <ul>
+                    <li class="description rtl"
+                        style="color: #ee3e80; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        opacity : برای تعیین مقدار شفافیت رنگ کاربرد دارد که عددی بین 1 و 0 است (حالت طبیعی = 1).
+                    </li>
+                </ul>
+                <ul>
+                    <li class="description rtl">
+                        active : از آن برای تغییر استایل المان پس از کلیک روی آن استفاده می شود.
+                        <p style="text-align: center; direction: ltr;">.text:active{تغییراتی که می خواهیم در المان دقیقا
+                            لحظه بعد از کلیک روی آن انجام شود}</p>
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+button:active {opacity: 0.5;}
+</pre>
+              </code>
+                </div>
+                <div class="example3">
+                    <button class="example-content" style="background-color: rgb(21, 255, 0);">100% <br>
+                        opacity</button>
+                    <button class="example-content" style="background-color: rgba(21, 255, 0, 0.6);">60% <br>
+                        opacity</button>
+                    <button class="example-content" style="background-color: rgba(21, 255, 0, 0.3);">30% <br>
+                        opacity</button>
+                    <button class="example-content" style="background-color: rgba(21, 255, 0, 0.1);">10% <br>
+                        opacity</button>
+                </div>
+            </div>
+        </div>
+        <p class="title rtl">PSEUDO CLASSES اختصاصی</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        pseudo class هایی که تا به الان به آنان پرداختیم بر روی عموم المان ها کاربرد دارند اما pseudo
+                        class های اختصاصی نیز داریم که فقط روی المان خاصی تاثیر گذارند.
+                    </li>
+                    <li class="description rtl">
+                        Visited : برای لینک ها استفاده می شود به گونه ای که لینک هایی که دیده شده و ما وارد آنان شده ایم
+                        به استایل خاصی در می آیند.
+                    </li>
+                    <li class="description rtl">
+                        link : برای لینک ها استفاده می شود به گونه ای که لینک هایی که دیده <span
+                            style="text-decoration: underline;">نشده</span> و ما وارد آنان <span
+                            style="text-decoration: underline;">نشده ایم</span> به استایل خاصی در می آیند.
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+a:link {
+    color: deeppink;
+    text-decoration: none;}
+a:visited {
+    color: black;}
+a:hover {
+    color: deeppink;
+    text-decoration: underline;}
+a:active {
+    color: darkcyan;}
+</pre>
+              </code>
+                </div>
+                <div class="example4">
+                    <a href="https://mftplus.com/">مجتمع فنی تهران</a>
+                    <a href="https://aparat.com/">آپارات</a>
+                    <a href="https://www.youtube.com">یوتوب</a>
+                </div>
+            </div>
+        </div>
+        <p class="title ltt">BOX SHADOW</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برخی اوقات پس از hover کردن روی المانی می بینید که آن المان دارای سایه می شود، برای ساخت سایه از
+                        پراپرتی box-shadow استفاده می کنیم.
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+button:hover {box-shadow: <span style="color: lightskyblue;">10px</span> <span style="color: lightcoral;">10px</span> <span style="color: lightgreen;">5px</span> <span style="color: violet;">rgba(0,0,0,0.3)</span>;}
+</pre>
+              </code>
+                </div>
+                <ul>
+                    <li class="description rtl" style="color: lightskyblue; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        مقدار سایه در محور x ها اگر منفی سمت چپ و اگر مثبت سمت راست
+                    </li>
+                    <li class="description rtl" style="color: lightcoral; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        مقدار سایه در محور y ها اگر منفی بالا اگر مثبت پایین
+                    </li>
+                    <li class="description rtl" style="color: lightgreen; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        مقدار بلوری بودن و تار بودن سایه
+                    </li>
+                    <li class="description rtl" style="color: violet; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        a مقدار شفافیت را تغییر می دهد که عددی بین یک و صفر است
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; Alireza Heydari & Parsa Pourrastgoo</p>
+</body>
+
+</html>
