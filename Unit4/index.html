@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Unit4</title>
+</head>
+
+<body>
+    <!-- START OF HEADER DEFINITION -->
+    <div class="header" dir="rtl">
+        <div class="logo">
+            <a href="https://www.mftplus.com">
+                <img src="https://mftplus.com/theme/images/mftlogo.png" alt="mft logo" class="mftlogo" />
+            </a>
+        </div>
+        <div class="links">
+            <a class="link" href="../Unit1/index.html">فصل 1</a>
+            <a class="link" href="../Unit2/index.html">فصل 2</a>
+            <a class="link" href="../Unit3/index.html">فصل 3</a>
+            <a class="link" href="../Unit4/index.html">فصل 4</a>
+            <a class="link" href="../Unit5/index.html">فصل 5</a>
+            <a class="link" href="../Unit6/index.html">فصل 6</a>
+            <a class="link" href="../Unit7/index.html">فصل 7</a>
+        </div>
+    </div>
+    <!-- END OF HEADER DEFINITION -->
+    <div class="guide">
+        <p class="title rtl">فصل چهارم</p>
+        <p class="title rtl">المان های بیشتر و انواع آن</p>
+        <p class="title rtl">عکس در HTML</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای اضافه کردن عکس از تگ &lt;img&gt; استفاده می کنیم. این المان
+                        Void element است همراه با این المان از اتریبیوت src برای آنکه
+                        بگوییم منبع عکس مان کدام فایل باشد استفاده می کنیم.
+                    </li>
+                </ul>
+            </div>
+            <div class="code-box">
+                <code>
+            <pre>&lt;img class="hi" src="<span style="color: lightblue;">hi.jpg</span>" <span style="color: lightcoral;">alt</span>="عکسی از طبیعت"&gt;</pre>
+          </code>
+            </div>
+            <div class="details">
+                <ul>
+                    <li class="description rtl" style="
+                color: lightblue;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+                  1px 1px 0 #000;
+              ">
+                        آدرس فایل عکس، اگر عکس درون همان فولدری که فایل HTML ما قرار دارد
+                        نبود برای آدرس دهی از / استفاده می کنیم.
+                    </li>
+                    <li class="description rtl" style="
+                color: lightcoral;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+                  1px 1px 0 #000;
+              ">
+                        alt اتریبیوتی است که آن را می نویسند تا اگر به هر دلیلی عکس نمایش
+                        داده نشد توضیح کوچکی ا آن عکس در دسترس کاربر قرار گیرد.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="title rtl">CSS های المان img</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">width : عرض عکس را تعیین می کند.</li>
+                    <li class="description rtl">
+                        height : ارتفاع عکس را تعیین می کند.
+                    </li>
+                    <li class="description rtl">
+                        object-fit : اگر دقت کرده باشید با تعیین فقط یکی از property های
+                        width و یا height آن یکی هم تغییر می کند، این عملکرد برای این است
+                        که shape عکس حفظ شود اما اگر بخواهیم ارتفاع و عرض مورد نظر خود را
+                        اعمال کنیم کافی است هر دو property را تنظیم کنیم و در عین حال برای
+                        حفظ shape عکس از property به نام object-fit استفاده می کنیم که
+                        value های آن به شرح زیر است :
+                        <ul>
+                            <li class="description rtl">
+                                cover : باعث می شود عکس بدون کشیدگی تمام ارتفاع و عرض مورد نظر
+                                خود را کاور کند.
+                            </li>
+                            <li class="description rtl">
+                                contain : عکس را کوچک می کند تا در محدوده مورد نظر جا شود.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="moz-box">
+                    <code>
+              <pre>
+.hi {width: 400px;
+     height: 400px;
+     object-fit: cover}</pre
+              >
+            </code>
+                </div>
+                <div class="moz-box">
+                    <code>
+              <pre>
+.hi {width: 400px;
+     height: 400px;
+     object-fit: contain}</pre
+              >
+            </code>
+                </div>
+                <img src="image2.jpg" alt="موز" class="moz" />
+                <img src="image2.jpg" alt="موز" class="moz" style="object-fit: contain; background-color: white" />
+            </div>
+        </div>
+        <p class="title ltr">&lt;div&gt; &lt;/div&gt;</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        یکی از مهم ترین تگ های HTML است. این تگ دارای ویژگی های زیر است :
+                    </li>
+                </ul>
+                <ol>
+                    <li class="description rtl">
+                        یک تگ container است و تگ های دیگر را در بر می گیرد (حتی div های
+                        دیگر).
+                    </li>
+                    <li class="description rtl">مانند یک box عمل می کند.</li>
+                    <li class="description rtl">
+                        به ما امکان گروه بندی المان ها با یکدیگر را می دهد.
+                    </li>
+                    <li class="description rtl">از تگ های block است.</li>
+                </ol>
+            </div>
+        </div>
+        <p class="title ltt">HTML document tree</p>
+        <div class="holder" style="background-color: white">
+            <img src="image3.jpg" alt="" style="width: 70%" />
+            <div class="family">
+                <p class="family" style="color: rgb(255, 230, 0)">
+                    body = یا جد ancestor
+                </p>
+                <p class="family" style="color: rgb(0, 216, 0)">
+                    div = یا والد parent
+                </p>
+                <p class="family" style="color: lightskyblue">
+                    ul, h1, p, hr = یا فرزند child
+                </p>
+                <p class="family" style="color: orange">
+                    em, li = یا اولاد descendent
+                </p>
+                <p class="family" style="color: white">
+                    ها li = یا خواهر برادر sibling
+                </p>
+            </div>
+        </div>
+        <p class="title rtl">انواع تگ های HTML</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        تگ های HTML را می توان به سه دسته تقسیم کرد :
+                        <ol>
+                            <li>
+                                block : این تگ ها کل خط (کل خط container) خود را اشغال می کنند
+                                و اجازه نمی دهند المان دیگری در کنار آنان قرار بگیزند.
+                            </li>
+                            <li>
+                                inline-block : این تگ ها فقط به مقداری صفخه را اشغال می کنند
+                                که مورد نیاز آنهاست، در اصل به اندلزه محتویات خود صفخه را
+                                اشغال می کنند.
+                            </li>
+                            <li>inline : المان هایی که در خط یک متن ظاهر می شوند.</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="code-box" style="display: inline-block">
+                <code>
+            <pre>
+&lt;h1&gt;مجتمع فنی تهران&lt;/h1&gt;
+&lt;button&gt;sign in&lt;/button&gt;
+&lt;button&gt;log in&lt;/button&gt;
+</pre
+            >
+          </code>
+            </div>
+            <img src="image1.png" alt="" style="width: 50px; margin: 0px 50px" />
+            <div class="example">
+                <h1>مجتمع فنی تهران</h1>
+                <button style="margin: 5px">sign in</button>
+                <button style="margin: 5px">log in</button>
+            </div>
+        </div>
+        <p class="title rtl">CSS display property</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای آنکه کنار المان متنی (p) یک المان دیگر قرار داد باید چه کرد؟
+                        به عبارت دیگر چطور می توان یک تگ که به طور پیش فرض block است را
+                        inline-block کرد و یا بلعکس؟ برای انجام این کار در کد های CSS از
+                        پراپرتی display استفاده کرده و value های block, inline و یا
+                        inline-block قرار می دهیم.
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="moz-box" style="display: inline-block">
+                    <code>
+              <pre>&lt;head&gt;
+    &lt;style&gt;h1{<span style="color: lightgreen;">display: inline-block;</span>}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;مجتمع فنی تهران&lt;/h1&gt;
+&lt;button&gt;sign in&lt;/button&gt;
+&lt;button&gt;log in&lt;/button&gt;
+&lt;/body&gt;
+</pre>
+            </code>
+                </div>
+                <div class="moz-box" style="display: inline-block">
+                    <code>
+              <pre>&lt;head&gt;
+    &lt;style&gt;button{<span style="color: rgb(248, 248, 74);">display: block;</span>}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;مجتمع فنی تهران&lt;/h1&gt;
+&lt;button&gt;sign in&lt;/button&gt;
+&lt;button&gt;log in&lt;/button&gt;
+&lt;/body&gt;
+</pre>
+            </code>
+                </div>
+                <div class="example2">
+                    <h1 style="display: inline-block">مجتمع فنی تهران</h1>
+                    <button style="margin: 5px">sign in</button>
+                    <button style="margin: 5px">log in</button>
+                </div>
+                <div class="example2">
+                    <h1>مجتمع فنی تهران</h1>
+                    <button style="margin: 5px; display: block">sign in</button>
+                    <button style="margin: 5px; display: block">log in</button>
+                </div>
+            </div>
+        </div>
+        <p class="title rtl">CSS visiblity</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        از visiblity ، property برای نمایش دادن و یا ندادن المان استفاده
+                        می شود.
+                    </li>
+                    <div class="code-box" style="display: inline-block">
+                        <code>
+                <pre>
+h2.a {
+    visiblity: visible;
+}
+
+h2.b {
+    visiblity: hidden;
+}
+</pre
+                >
+              </code>
+                    </div>
+                    <li class="description rtl">
+                        توجه داشته باشید با قرار دادن مقدار این property بر روی hidden جای
+                        خالی المان کماکان نمایش داده می شود و فقط المانی نمایش داده نمی
+                        شود.
+                    </li>
+                    <li class="description rtl">
+                        به صورت پیش فرض مقدار این visible , property است.
+                    </li>
+                    <li class="description rtl">
+                        برای آنکه نه المان نمایش داده شود و نه جای خالی آن نمایش داده شود
+                        باید از display , proprety و none , value استفاده کنید.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="title ltr">LINKS</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        با ایجاد لینک در فصل اول آشنا شدیم حالا به موارد تکمیلی مربوط به
+                        لینک می پردازیم.
+                    </li>
+                    <li class="description rtl">
+                        استفاده از عکس به عنوان لینک : برای استفاده از عکس به عنوان لینک
+                        کافی است تگ &lt;img&gt; را درون تگ &lt;/a&gt;&lt;a&gt; قرار دهیم
+                    </li>
+                </ul>
+            </div>
+            <div class="code-box" style="display: inline-block;">
+                <code>
+            <pre>
+&lt;a href="https://www.digikala.com/"&gt;&lt;img src="digikalalogo.png"&gt;&lt;/a&gt;</pre
+            >
+          </code>
+            </div>
+            <img src="image1.png" alt="" style="width: 60px; margin-bottom: 0px" />
+            <a href="https://www.digikala.com/"><img src="image4.png" alt="digikala" class="digikala" /></a>
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        لینک کردن به آدرس ایمیل : برای این عمل کافی است در مقدار href قبل
+                        از آدرس ایمیل از :mailto استفاده کنیم.
+                    </li>
+                </ul>
+                <div class="code-box" style="display: inline-block">
+                    <code>
+              <pre>
+&lt;a href="mailto:someone@examle.com"&gt;Send email&lt;/a&gt;</pre
+              >
+            </code>
+                </div>
+                <ul>
+                    <li class="description rtl">
+                        تلفن : برای قرار دادن شماره تلفن و این قابلیت که به محض کلیک کاربر
+                        روی لینک با آن شماره تماس گرفته شود از لینک شماره تلفن استفاده می
+                        کنیم با این تفاوت که در مقادیر href قبل نوشتن شماره از :tel
+                        استفاده می کنیم.
+                    </li>
+                </ul>
+                <div class="code-box" style="display: inline-block">
+                    <code>
+              <pre>
+&lt;a href="tel:0212729"&gt;تماس با مجموعه&lt;/a&gt;</pre
+              >
+            </code>
+                </div>
+            </div>
+        </div>
+        <p class="title ltr">Absolute URLs vs. Relative URLs</p>
+        <div class="holder">
+            <div class="content">
+                <div class="extra">
+                    <h2>Absolute</h2>
+                    <p>حالتی که آدرس یک سایت بطور کامل در اتریبیوت href قرار بگیرد.</p>
+                </div>
+                <div class="extra" style="background-color: lightpink;">
+                    <h2>Relative</h2>
+                    <p>حالتی که آدرس قسمت دیگری از همان سایت در اتریبیوت href قرار بگیرد.</p>
+                </div>
+                <div class="moz-box" style="display: inline-block">
+                    <code>
+                  <pre>&lt;p&gt;&lt;a href="https://mftplus.com/"&gt;سایت مجتمع فنی&lt;/a&gt;&lt;/p&gt;</pre
+                  >
+                </code>
+                </div>
+                <div class="moz-box" style="display: inline-block">
+                    <code>
+                  <pre>&lt;p&gt;&lt;a href="html_images.asp"&gt;HTML Images&lt;/a&gt;&lt;/p&gt;</pre
+                  >
+                </code>
+                </div>
+            </div>
+        </div>
+        <p class="title ltr">comment</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای گذاشتن کامنت در HTML کامنت مورد نظر را به صورت زیر می نویسند :
+                    </li>
+                    <div class="code-box" style="display: inline-block">
+                        <code>
+                  <pre>&lt;!-- متن مورد نظر --&gt;</pre
+                  >
+                </code>
+                    </div>
+                    <li class="description rtl">
+                        مسلما کامنت برای کاربر سایت نمایش داده نمی شود.
+                    </li>
+                    <div class="code-box" style="display: inline-block">
+                        <code>
+<pre><span style="color: rgb(152, 247, 152);">&lt;!-- hello --&gt;</span>
+&lt;h2&gt;Olafur Eliasson&lt;/h2&gt;
+<span style="color: rgb(152, 247, 152);">&lt;!-- end of introduction --&gt;</span>
+<span style="color: rgb(152, 247, 152);">&lt;!-- start of main text --&gt;</span>   
+&lt;p&gt;Lorem ipsum dolor sit amet,
+   consectetur adipisicing elit. Mollitia itaque amet quo sit,
+   ipsam asperiores sunt odio exercitationem voluptatibus esse.
+&lt;/p&gt;
+<span style="color: rgb(152, 247, 152);">&lt;!-- end of main text --&gt;</span> 
+</pre
+                  >
+                </code>
+                    </div>
+                    <img src="image1.png" alt="" style="width: 70px; margin-bottom: 30px;" />
+                    <div class="example" style="padding: 0px 10px;">
+                        <!-- hello -->
+                        <h2>Olafur Eliasson</h2>
+                        <!-- end of introduction -->
+                        <!-- start of main text -->
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Mollitia itaque amet quo sit,
+                            ipsam asperiores sunt odio exercitationem voluptatibus esse.</p>
+                        <!-- end of main text -->
+                    </div>
+                    <li class="description rtl">
+                        برای گذاشتن کامنت در CSS کامنت مورد نظر را به صورت زیر می نویسند :
+                    </li>
+                    <div class="code-box" style="display: inline-block">
+                        <code>
+<pre><span style="color: rgb(152, 247, 152);">/* color name */</span>
+h1 {
+    color: darkcyan;}
+<span style="color: rgb(152, 247, 152);">/* hex code */</span>
+h2 {
+    color: #ee3e80;}
+<span style="color: rgb(152, 247, 152);">/* rgb value */</span>
+p {
+    color: rgb (100, 100, 90);}
+</pre
+                  >
+                </code>
+                    </div>
+                    <img src="image1.png" alt="" style="width: 70px; margin-bottom: 30px;" />
+                    <div class="example" style="padding: 0px 10px; width: 400px;">
+                        <h1 style="color: darkcyan;">Marine Biology</h1>
+                        <h2 style="color: #ee3e80;">The Composition of seawater</h2>
+                        <p style="color: rgb(100, 100, 90);">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Mollitia itaque amet quo sit,
+                            ipsam asperiores sunt odio exercitationem voluptatibus esse.</p>
+                    </div>
+                    <li class="description rtl">
+                        به طور کلی در VScode برای کامنت گذاری می توان از کلید ترکیبی /+ctrl نیز استفاده می شود.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="title ltr">HTML Favicon</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        شاید تا به حال به آیکونی که در کنار نام تب قرار دارد دقت کرده باشید، به این آیکون favicon می
+                        گویند. برای قرار دادن این آیکون کافی است در تگ &lt;head&gt; تگ &lt;link&gt; را قرار داده و مقدار
+                        اتریبیوت rel را برابر icon گذاشته و مقدار اتریبیوت href را آدرس فایل آیکون مورد نظر قرار دهیم.
+                    </li>
+                </ul>
+            </div>
+            <div class="code-box" style="display: inline-block">
+                <code>
+            <pre>
+&lt;head&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;link rel="icon" href="image/faveicon.ico"&gt;
+&lt;/head&gt;</pre
+            >
+          </code>
+            </div>
+            <img src="image1.png" alt="" style="width: 50px" />
+             <img src="image5.jpeg" alt="" style="margin: 20px 0px 0px 30px;">
+             <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        یکی از بهترین سایت ها برای ساخت favicon و یا استفاده از favicon های آماده سایت <a href="https://www.favicon.cc/">www.favicon.cc</a> است.
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; Alireza Heydari & Parsa Pourrastgoo</p>
+</body>
+
+</html>
