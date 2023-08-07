@@ -175,7 +175,7 @@ a:active {
                 </div>
             </div>
         </div>
-        <p class="title ltt">BOX SHADOW</p>
+        <p class="title ltr">BOX SHADOW</p>
         <div class="holder">
             <div class="details">
                 <ul>
@@ -192,19 +192,128 @@ button:hover {box-shadow: <span style="color: lightskyblue;">10px</span> <span s
               </code>
                 </div>
                 <ul>
-                    <li class="description rtl" style="color: lightskyblue; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                    <li class="description rtl"
+                        style="color: lightskyblue; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
                         مقدار سایه در محور x ها اگر منفی سمت چپ و اگر مثبت سمت راست
                     </li>
-                    <li class="description rtl" style="color: lightcoral; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                    <li class="description rtl"
+                        style="color: lightcoral; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
                         مقدار سایه در محور y ها اگر منفی بالا اگر مثبت پایین
                     </li>
-                    <li class="description rtl" style="color: lightgreen; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                    <li class="description rtl"
+                        style="color: lightgreen; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
                         مقدار بلوری بودن و تار بودن سایه
                     </li>
-                    <li class="description rtl" style="color: violet; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                    <li class="description rtl"
+                        style="color: violet; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
                         a مقدار شفافیت را تغییر می دهد که عددی بین یک و صفر است
                     </li>
+                    <li class="description rtl">
+                        علاوه بر value های ذکر شده دو value دیگر هم داریم که به شرح زیر است :
+                    </li>
                 </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+button:hover {box-shadow: 10px 10px 5px <span style="color: lime;">10px</span> <span style="color: rgb(0, 140, 255);">inset</span> rgba(0,0,0,0.3);}
+</pre>
+              </code>
+                </div>
+                <ul>
+                    <li class="description rtl"
+                        style="color: lime; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        اندازه ای که سایه نسبت به المان بزرگ تر یا کوچک تر است مثلا اگر این عدد 10px+ بود سایه 10px از
+                        المان بزرگ تر و اگر 10px- بود سایه 10px از سوژه کوچک تر است.
+                    </li>
+                    <li class="description rtl"
+                        style="color: rgb(0, 140, 255); text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        سایه را درون المان می اندازد.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="title ltr">CURSOR</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        شاید شما هم دیده باشید که در بعضی سایت ها هنگام hover کردن روی المانی شکل cursor ماوس تغییر می
+                        کند، برای انجام این تغییر در کد های CSS المان مورد نظر از پراپرتی cursor و از value مورد نظر
+                        استفاده می کنیم.
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+{cursor: pointer;}
+</pre>
+              </code>
+                </div>
+            </div>
+        </div>
+        <p class="title ltr">URL() VALUE</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        هرگاه بخواهیم value یک CSS PROPERTY یک فایل باشد از url() استفاده می کنیم به طوری که آدرس فایل
+                        مورد نظر را در پرانتز می نویسم.
+                    </li>
+                    <li class="description rtl">
+                        به کلام دگر کاربرد این value هنگامی است که مفدار property ما یک فایل باشد.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="title rtl">قرار دادن cursor دلخواه</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">
+                        برای نمایش دادن cursor دلخواه هرگاه که روی المانی hover می کنیم باید در کد های css از همان
+                        پراپرتی cursor استفاده اما این بار از url , value() استفاده و آدرس فایل عکس cursor مورد نظر را
+                        در () می نویسیم بعد از این هم باد با کمک , یک حالت از پیش تعیین شده را بنویسیم.
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+{cursor: url(<span style="color: palevioletred;">ions8-cursor-50.png</span>), <span style="color: palegreen;">pointer</span>;}
+</pre>
+              </code>
+                </div>
+                <ul>
+                    <li class="description rtl"
+                        style="color: palevioletred; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        آدرس فایل
+                    </li>
+                    <li class="description rtl"
+                        style="color: palegreen; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        یک حالت معمول در صورتی که عکس خوانده نشد
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="title rtl">قرار دادن bullets دلخواه در لیست</p>
+        <div class="holder">
+            <div class="details">
+                <ul>
+                    <li class="description rtl">برای قرار دادن bullets مورد نظر در لیست های ul کافی است پراپرتی
+                        list-style-image استفاده و value آنرا ()url قرار داده . آدرس فایل عکس را درون پرانتز قرار دهیم.
+                    </li>
+                </ul>
+                <div class="code-box">
+                    <code>
+<pre>
+ul {list-style-iamge: url("images/star.png");}
+</pre>
+                    </code>
+                </div>
+                    <ul class="example-list">
+                        <li>Book</li>
+                        <li>Pencil</li>
+                        <li>Pen</li>
+                    </ul>
             </div>
         </div>
         <p class="copyright">&copy; Alireza Heydari & Parsa Pourrastgoo</p>

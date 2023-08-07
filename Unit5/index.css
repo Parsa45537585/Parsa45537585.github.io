@@ -237,6 +237,14 @@ tr td {
     margin: auto;
 }
 
+.content2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    column-gap: 80px;
+    margin: auto;
+}
+
 .moz {
     width: 400px;
     height: 400px;
@@ -334,4 +342,12 @@ a:active {
     display: inline-block;
     width: 300px;
     margin: 40px 0px 40px 100px;
+}
+
+.example-list {
+    list-style-image: url(image1.png);
+    width: 100PX;
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
 }
